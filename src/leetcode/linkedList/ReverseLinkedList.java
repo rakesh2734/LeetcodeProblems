@@ -1,4 +1,4 @@
-package leetcode.linkedList.explore.classicproblems;
+package leetcode.linkedList;
 
 import leetcode.linkedList.ListNode;
 

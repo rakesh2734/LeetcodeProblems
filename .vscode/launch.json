@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchBST",
+            "request": "launch",
+            "mainClass": "leetcode.binarysearchtree.SearchBST",
+            "projectName": "Leetcode_54c70a66"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CountGoodTriplets",
+            "request": "launch",
+            "mainClass": "leetcode.arrays.easy.CountGoodTriplets",
+            "projectName": "Leetcode_54c70a66"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchBST",
+            "request": "launch",
+            "mainClass": "leetcode.binarySearchTree.SearchBST",
+            "projectName": "Leetcode_54c70a66"
+        }
+    ]
+}

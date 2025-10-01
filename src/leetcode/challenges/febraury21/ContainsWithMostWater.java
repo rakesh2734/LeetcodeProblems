@@ -30,6 +30,7 @@ public class ContainsWithMostWater {
 
         return max;
     }
+    // Brute force approach
     public int maxAreaOn2(int[] height) {
         int max = 0;
         int n = height.length;
@@ -44,6 +45,7 @@ public class ContainsWithMostWater {
         return max;
     }
 
+    // Two Pointer Approach
     public int maxAreaOn(int[] height) {
         int max = 0;
         int n = height.length;

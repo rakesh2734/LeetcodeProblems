@@ -3,6 +3,7 @@ package leetcode.hashtable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
@@ -32,11 +33,33 @@ public class SingleNumber {
         return 0;
     }
 
+    int singleNumberHashCheck(int[] nums){
+
+        Map<Integer, Integer> noDups = new HashMap<>();
+
+        for(int i: nums) {
+            if(noDups.containsKey(i)) {
+                noDups.put(i, noDups.get(i)+1);
+            }
+            else {
+                noDups.put(i, 1);
+            }
+
+        }
+
+        for(int j : nums) {
+            if(noDups.get(j) == 1) {
+                return j;
+            }
+        }
+        return 0;
+    }
+
     public static void main(String[] args) {
         SingleNumber singleNumber = new SingleNumber();
         int[] nums = {2,2,1,2,1,3};
 
-        int value = singleNumber.singleNumberHash(nums);
+        int value = singleNumber.singleNumberHashCheck(nums);
         System.out.println(value);
     }
 }
